@@ -17,7 +17,7 @@ Private modules
 - keep_watching.h
 - scheduler.h
 
-<img src="https://github.com/liadraz/Watchdog_sw/blob/main/docs_info/modules.png?raw=true" align="center">
+<img align="center" width="75%" height="75%" src="https://github.com/liadraz/Watchdog_sw/blob/main/docs_info/modules.png?raw=true">
 
 
 
