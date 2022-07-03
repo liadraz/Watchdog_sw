@@ -1,17 +1,24 @@
 # Watchdog_sw
-A program that checks that a given process is running. In case of an error or a malfunction in the client-process the watchdog responsible of recover it.
+A program that checks that a given client-process is running. In case of an error or a malfunction in the client-process the watchdog responsible for recover it.
 
 
-### Motivation for WatchDog
-" Watchdogs are commonly found in many systems where humans cannot easily access the equipment or would be unable to react to faults in a timely manner. In such systems, the computer cannot depend on a human to invoke a reboot if it hangs; it must be self-reliant. "
-
-> There are many ways to implement a watchdog software.
+### Motivation for using a WatchDog
+Watchdogs are commonly found in many systems where humans cannot easily access the equipment or would be unable to react to faults in a timely manner. In such systems, the computer cannot depend on a human to invoke a reboot if it hangs; it must be self-reliant.
 
 The current Project provides an API `./include/watchdog.h` with two main functions: run or stop watching. The user can run the watchdog whenever he decides; in a critical section or for a longer durations.
 
 
-### WD Modules
+### WD API Design
+The program includes the following modules
+Public to the user
+- watchdog.h
 
+Private modules
+- keep_watching.h
+- scheduler.h
+
+
+![API modules](https://github.com/liadraz/Watchdog_sw/blob/main/docs_info/modules.png)
 
 
 
@@ -23,9 +30,9 @@ Run `make` cmd to build all the necessary files.
     make watchdog
 ```
 
-Output files: `libwd.so`, `run_wd.out`.
+Output files: `libwd.so` `run_wd.out`.
 
-> Make sure both files exists in your main program directory.
+* Make sure both files exists in your main program directory.
 
 
 
