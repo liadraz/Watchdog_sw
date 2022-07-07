@@ -20,6 +20,11 @@ Private modules
 <img align="center" width="75%" height="75%" src="https://github.com/liadraz/Watchdog_sw/blob/main/docs_info/modules.png?raw=true">
 
 
+### A Common UseCase
+A general flow chart that demonstrates what happens when a user invoke the KeepMeAlive(run_wd) function.
+
+<img align="center" width="75%" height="75%" src="https://github.com/liadraz/Watchdog_sw/blob/main/docs_info/common_useCase.png?raw=true">
+
 
 
 ## Usage
